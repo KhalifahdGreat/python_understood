@@ -1,36 +1,36 @@
 import math
 
 
-print("print pizza")
+# print("print pizza")
 # print("Comment")
 
 
 # Variables (String, Int, float, boolean)
 
 # String
-name = "Khalifa"
-job = "DevOps Engineer"
-
-# Integer
-age = 24
-height = 191
-
-# float
-
-shoeSize = 46.5
-Gpa = 3.15
-
-# Boolean
-
-isMarried = False
-isAlive = True
-
-print(f"{name}{job}{age}{height}{shoeSize}{Gpa}{isMarried}")
+# name = "Khalifa"
+# job = "DevOps Engineer"
+#
+# # Integer
+# age = 24
+# height = 191
+#
+# # float
+#
+# shoeSize = 46.5
+# Gpa = 3.15
+#
+# # Boolean
+#
+# isMarried = False
+# isAlive = True
+#
+# print(f"{name}{job}{age}{height}{shoeSize}{Gpa}{isMarried}")
 
 
 # Type Casting  str(), int(), float(), bool()
 
-print(type(age))
+# print(type(age))
 # age = str(age)
 # print(type(age))
 
@@ -60,23 +60,23 @@ print(type(age))
 
 # Operators
 
-friend = 0
-friend += 2
-
-friend -= 1
-friend *= 3
-
-friend /= 1
-friend **= 2
-
-remainder = friend % 2
-
-print(f"{friend}, {remainder}")
-
-
-x = 3.14
-y = 4
-z = 5
+# friend = 0
+# friend += 2
+#
+# friend -= 1
+# friend *= 3
+#
+# friend /= 1
+# friend **= 2
+#
+# remainder = friend % 2
+#
+# print(f"{friend}, {remainder}")
+#
+#
+# x = 3.14
+# y = 4
+# z = 5
 
 # result = round(x)
 # result = floor(x)
@@ -101,4 +101,83 @@ z = 5
 # print(c)
 
 
-conditional
+# conditional statement
+# age = int(input("How old are you? "))
+# if age >= 18:
+#     print(f"your are old enough")
+# elif age < 0:
+#     print(f"your are haven't been born yet")
+# else:
+#     print(f"your are not old enough")
+
+#logical operator
+
+# || = or
+# && = and
+# ! = not
+
+# conditional expression || ternary operator
+
+# access_level = "guest"
+# age = 25
+#
+# access_level = "Full access" if access_level == "admin" else "Limited access"
+# age = "Adult" if age >= 18 else "Child"
+#
+# print(access_level)
+
+# String methods
+
+# len() || length
+# find()
+# rfind() //last occurence, if it can't find hence results to -1
+# capitalize()
+# uppercase()
+# lowercase()
+# isdigit() when a string returns only digits and it is a boolean
+# isalpha() when a string returns only strings, no spaces allowed and it is a boolean
+# count() to count the number of occurence
+# replace() to convert some characters with another
+
+
+
+# username = (input("Enter your username: "))
+#
+# if len(username) > 12:
+#     print("Your username must be less than 12 characters")
+# elif " " in username:
+#     print("Your username must not include a space")
+# elif username.isdigit():
+#     print("Your username must contain only alphabets")
+# else:
+#     print(f"{username} is valid")
+
+
+# string indexing
+
+# credit_cardNumber = "1223-4532-1772-1983"
+#
+# print(credit_cardNumber[::-1])
+# the starting is inclusive but the ending is exclusive
+
+
+# format specifier
+
+# price1 = 100.23
+# price2 = -87.786
+# price3 = 10000.08
+#
+# print(f"{price1:+.2f}")
+# print(f"{price2:+.1f}")
+# print(f"{price3:+,.0f}")
+
+
+# looping(while)
+
+age = int(input("Enter your age: "))
+
+while not age > 18:
+    age = int(input("Enter your age: "))
+    print(f"Your age is too small. Please try again.")
+
+# for loop

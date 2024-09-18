@@ -1,4 +1,5 @@
 import math
+import time
 
 
 # print("print pizza")
@@ -174,10 +175,52 @@ import math
 
 # looping(while)
 
-age = int(input("Enter your age: "))
-
-while not age > 18:
-    age = int(input("Enter your age: "))
-    print(f"Your age is too small. Please try again.")
+# age = int(input("Enter your age: "))
+#
+# while not age > 18:
+#     age = int(input("Enter your age: "))
+#     print(f"Your age is too small. Please try again.")
 
 # for loop
+
+# for x in range(1, 11, 2):
+#     print(f"{x} x {x} = {x * x}")
+
+# Set timeout
+# my_time = int(input("Enter time in seconds: "))
+#
+# for x in range(my_time, 0 , -1):
+#     seconds = int(x % 60)
+#     minutes = int(x / 60) % 60
+#     hour = int(x / 3600)
+#
+#     print(f"{hour:02}:{minutes:02}:{seconds:02}")
+#
+#     time.sleep(1)
+#
+
+
+# print rectangle
+
+# length = int(input("Enter length: "))
+# breadth = int(input("Enter breadth: "))
+#
+# for x in range(length):
+#     print("-", end="")
+# for y in range(breadth):
+#      print("|")
+
+
+# Collection
+#List  array equivalent ordered and changeable
+#Set  no duplicate value and immutable. Removing items are possible
+#Tuple unchangeable and ordered.
+
+fruits = ["apple", "orange", "cherry"]
+
+print(fruits[1])
+print(len(fruits))
+print("pineapple" in fruits)
+
+for fruit in fruits:
+    print(fruit)

@@ -1,6 +1,7 @@
 import math
 import time
-
+from functools import total_ordering
+from lib2to3.fixer_util import String
 
 # print("print pizza")
 # print("Comment")
@@ -212,15 +213,44 @@ import time
 
 
 # Collection
-#List  array equivalent ordered and changeable
-#Set  no duplicate value and immutable. Removing items are possible
-#Tuple unchangeable and ordered.
+#List []  array equivalent ordered and changeable
+#Set  {} no duplicate value and immutable. Removing items are possible
+#Tuple ()unchangeable and ordered.
 
-fruits = ["apple", "orange", "cherry"]
+# fruits = ["apple", "orange", "cherry"]
+#
+# print(fruits[1])
+# print(len(fruits))
+# print("pineapple" in fruits)
+#
+# for fruit in fruits:
+#     print(fruit)
 
-print(fruits[1])
-print(len(fruits))
-print("pineapple" in fruits)
 
-for fruit in fruits:
-    print(fruit)
+# exercise on list, set and tuples
+
+foods = []
+prices = []
+total = 0
+
+while True:
+    food = str(input("What kind of food do you want? (q to quit): "))
+    if food.lower() == "q":
+        break
+    else:
+        price = float(input(f"What price do {food}? (in dollars):$"))
+        prices.append(price)
+        foods.append(food)
+
+
+
+print("----Your cart is -----")
+
+for food in foods:
+    print(food, end=" ")
+
+for price in prices:
+    total += price
+
+print()
+print(f"Your shopping cart is {total:.2f}")

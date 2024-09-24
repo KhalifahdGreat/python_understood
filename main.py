@@ -1,7 +1,6 @@
 import math
 import time
-from functools import total_ordering
-from lib2to3.fixer_util import String
+import random
 
 # print("print pizza")
 # print("Comment")
@@ -229,28 +228,98 @@ from lib2to3.fixer_util import String
 
 # exercise on list, set and tuples
 
-foods = []
-prices = []
-total = 0
+# foods = []
+# prices = []
+# total = 0
+#
+# while True:
+#     food = str(input("What kind of food do you want? (q to quit): "))
+#     if food.lower() == "q":
+#         break
+#     else:
+#         price = float(input(f"What price do {food}? (in dollars):$"))
+#         prices.append(price)
+#         foods.append(food)
+#
+#
+#
+# print("----Your cart is -----")
+#
+# for food in foods:
+#     print(food, end=" ")
+#
+# for price in prices:
+#     total += price
+#
+# print()
+# print(f"Your shopping cart is {total:.2f}")
 
-while True:
-    food = str(input("What kind of food do you want? (q to quit): "))
-    if food.lower() == "q":
-        break
-    else:
-        price = float(input(f"What price do {food}? (in dollars):$"))
-        prices.append(price)
-        foods.append(food)
+
+# 2 dimensional lists
+
+# fruits = ["apple", "banana", "cherry"]
+# vegetables = ["brocoli", "spinach", "tomato"]
+# meats = ["chicken", "beef", "mutton"]
+#
+# groceries = [fruits, vegetables, meats]
+# print(groceries[0][1])
+#
+# for grocery in groceries:
+#     for items in grocery:
+#         print(items, end=" ")
+#     print()
+
+#dictionaries is a collection of key value pairs ordered and changeable. No duplicates
+
+# capitals = {
+#     "USA": "WASHINGTON",
+#     "NIGERIA": "ABUJA",
+#     "CANADA": "ONTARIO"
+# }
+# print(f"{capitals.get("USA")}")
+# capitals.update({"USA": "DETROIT"})
+#
+# print(f"{capitals}")
 
 
+# random
 
-print("----Your cart is -----")
+# generated = int(random.random() * 1000)
+#
+# low  = 1
+# high = 1000
+# game = ("rock", "paper", "scissor")
+# cards = ["2","3","4","5","6","7"]
+#
+# range = random.randint(low, high)
+# choice = random.choice(game)
+# random.shuffle(cards)
+#
+#
+# print(generated)
+# print(range)
+# print(choice)
+# print(cards)
 
-for food in foods:
-    print(food, end=" ")
+# functions
 
-for price in prices:
-    total += price
+# def getUserName(name):
+#     print(name)
+#
+# getUserName("bayo")
+# getUserName("Tope")
+# getUserName("Funke")
+#
+# def addNum(a, b):
+#     add = a + b
+#     return add
+#
+# addNum(2, 4)
 
-print()
-print(f"Your shopping cart is {total:.2f}")
+# default arguments:
+# Types of argument:
+# positional argument,
+# default argument,
+# Keyword arguments,
+# arbitrary arguments
+#     args && kwargs

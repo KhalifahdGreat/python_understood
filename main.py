@@ -323,3 +323,70 @@ import random
 # Keyword arguments,
 # arbitrary arguments
 #     args && kwargs
+# iterables
+# Membership operator
+# 1. in
+# 2. not in
+
+# list comprehension
+# A more concise way to create lists in python
+# compact  and easier to read than traditional loops [expression for value in iterable if condition]
+
+# doubles = []
+#
+# for x in range(1, 11):
+#         doubles.append(x)
+
+# doubles = [x * 2 for x in range(1, 11)]
+# print(doubles)
+#
+# numbers = [1, -2, 3, -4, 5, -6]
+#
+# grades = [85, 42, 79, 90, 56, 51]
+#
+#
+# passing_grade = [grade for grade in grades if grade >= 70]
+# print(passing_grade)
+# positive_numbers = [number.__abs__() for number in numbers]
+# print(positive_numbers)
+
+
+# Match case statement also know as switch case in other languages;
+# case is value being examined
+
+# def day_of_the_week(day):
+#     match day:
+#         case 1:
+#             return 'Monday'
+#         case 2:
+#             return 'Tuesday'
+#         case 3:
+#             return 'Wednesday'
+#         case 4:
+#             return 'Thursday'
+#         case 5:
+#             return 'Friday'
+#         case 6:
+#             return 'Saturday'
+#         case 7:
+#             return 'Sunday'
+#         case _:
+#             return 'not a valid day'
+#
+#
+# print(day_of_the_week(3))
+
+# module
+# built in modules and self built modules
+
+# import math  | import math as m this is as alias
+# import example
+# result = example.square(3)
+# print (result)
+
+
+# variable scope = where a variable is visible and accessible
+# Scope resolution = LEGB
+
+
+# if __name__ == '__main__ //

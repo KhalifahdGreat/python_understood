@@ -1,6 +1,6 @@
-import math
-import time
-import random
+# import math
+# import time
+# import random
 
 # print("print pizza")
 # print("Comment")
@@ -255,7 +255,7 @@ import random
 # print(f"Your shopping cart is {total:.2f}")
 
 
-# 2 dimensional lists
+# 2 dimensional lists || Array
 
 # fruits = ["apple", "banana", "cherry"]
 # vegetables = ["brocoli", "spinach", "tomato"]
@@ -269,7 +269,7 @@ import random
 #         print(items, end=" ")
 #     print()
 
-#dictionaries is a collection of key value pairs ordered and changeable. No duplicates
+#dictionaries is a collection of key value pairs ordered and changeable. No duplicates || json
 
 # capitals = {
 #     "USA": "WASHINGTON",
@@ -280,7 +280,7 @@ import random
 # capitals.update({"USA": "DETROIT"})
 #
 # print(f"{capitals}")
-
+# print(help(capitals))
 
 # random
 
@@ -390,3 +390,40 @@ import random
 
 
 # if __name__ == '__main__ //
+
+# encryption program
+
+# import random
+# import string
+#
+# chars = " " + string.ascii_uppercase + string.ascii_lowercase + string.digits
+# chars = list(chars)
+# key = chars.copy()
+#
+# random.shuffle(key)
+# print(f"chars: {chars}")
+# print(f"key  : {key}")
+#
+# # encryption
+#
+# plain_text = input("Enter plain text to encrypt: ")
+# cipher_text = ""
+#
+# for letter in plain_text:
+#     index = chars.index(letter)
+#     cipher_text += key[index]
+#
+# print(f"cipher_text: {cipher_text}")
+#
+# # Decryption
+# cipher_text = input("Enter plain text to encrypt: ")
+# plain_text = ""
+#
+#
+# for letter in cipher_text:
+#     index = key.index(letter)
+#     plain_text += chars[index]
+#
+# print(f"cipher_text: {plain_text}")
+
+# OOP
